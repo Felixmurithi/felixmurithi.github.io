@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/me.JPG" alt="" />
+      <div>
+        <ul>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li>
+            <a href="/images/skills/Felix Murithi Resume.pdf" target="_blank"
+              >resume</a
+            >
+          </li>
+        </ul>
+      </div>
+      <a class="a-btn" href="#contact">Contact Me</a>
+    </header>
+
+    <aside class="socials">
+      <a
+        href="mailto:felixmurithi.dev@gmail.com
+      "
+      >
+        <img src="/images/socials/email-8-svgrepo-com.svg" alt="email icon" />
+      </a>
+      <a href="https://github.com/felixmurithi">
+        <img src="/images/socials/icons8-github.svg" alt="github icon" />
+      </a>
+      <a href="https://www.linkedin.com/in/felix-murithi/">
+        <img src="/images/socials/linkedin.png" alt="linkedin icon" />
+      </a>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="profile-summary">
+          <div>
+            <h2>Hi, I Am <span>Felix Murithi 👋🏿</span></h2>
+            <h1>Creative Designer & Web Developer</h1>
+          </div>
+          <p>
+            I design and develop static websites, single page applications,
+            server rendered websites and Rest APIs.
+          </p>
+          <img src="/images/AvatarMaker.svg" alt="my avatar" />
+        </div>
+        <div class="technologies">
+          <img src="./images/js.svg" alt="javascript logo" />
+          <img src="/images/ts-logo-round-128.svg" alt="typescript logo" />
+          <img src="/images/React-icon.svg" alt="react js logo" />
+          <img
+            src="/images/nextjs-icon-light-background.svg"
+            alt="next js logo"
+          />
+
+          <img src="./images/nodejs.svg" alt="node js logo" />
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div>
+          <figure>
+            <img
+              src="/images/skills/frontend.png"
+              alt="front-end development skill icon"
+            />
+            <div>
+              <h3>Frontend Developement</h3>
+              <p>react, react-query, redux, next</p>
+            </div>
+          </figure>
+
+          <figure>
+            <img
+              src="/images/skills/backend.png"
+              alt="back-end development skill icon"
+            />
+            <div>
+              <h3>Backend Development</h3>
+              <p>node, express, fastify, github actions, mongodb, postgresql</p>
+            </div>
+          </figure>
+          <figure>
+            <img src="/images/skills/ui_ux.png" alt="web design skill icon" />
+            <div>
+              <h3>web design</h3>
+              <p>copy-writing, figma, web-accesibility, SEO</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="work" id="projects">
+        <h2>My work</h2>
+        <div>
+          <figure>
+            <img src="/images/react-project.png" alt="" />
+            <div>
+              <h3>React summary</h3>
+              <a href="https://reactin68hrs.vercel.app/"
+                >see more <span>&rarr;</span></a
+              >
+            </div>
+          </figure>
+          <figure>
+            <img src="/images/nodejs.svg" alt="" />
+            <div>
+              <h3>Node API</h3>
+              <a href="https://github.com/Felixmurithi/node-express-mongo"
+                >see more <span>&rarr;</span></a
+              >
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact me</h2>
+        <div>
+          <img src="/images/chat-box.png" alt="" />
+
+          <form action="https://formspree.io/f/xanwlboj" method="POST">
+            <input type="text" placeholder="name" name="name" />
+            <input type="email" placeholder="email" name="email" />
+            <textarea name="message" id="" placeholder="message"></textarea>
+            <button type="submit">submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li>
+          <a href="/images/skills/Felix Murithi Resume.pdf" target="_blank"
+            >resume</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
