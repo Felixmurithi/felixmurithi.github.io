@@ -291,6 +291,10 @@ main {
       a:visited {
         color: var(--accent-color);
       }
+
+      .nofilter {
+        filter: none;
+      }
     }
   }
 }
@@ -332,14 +336,16 @@ main {
 } */
 footer {
   ul {
+    width: 40%;
     display: flex;
     align-items: center;
     list-style-type: none;
     display: flex;
     margin: auto;
     gap: 1.2rem;
-    width: fit-content;
+    /* width: fit-content; */
     border-top: solid 1px var(--text-color);
     padding-top: 1rem;
+    justify-content: space-between;
   }
 }
