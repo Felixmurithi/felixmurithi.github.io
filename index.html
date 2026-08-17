@@ -1,172 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="image/png" sizes="32x32" rel="icon" href="./images/dev.png" />
-    <title>My Portfolio</title>
-
+    <meta
+      name="description"
+      content="Felix Murithi — Web Developer & Creative Designer. Building modern web experiences with React, Next.js and Node."
+    />
+    <title>Felix Murithi · Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/dev.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <header>
-      <img src="/images/me.JPG" alt="" />
-      <div>
-        <ul>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li>
-            <a
-              href="https://github.com/Felixmurithi/felixmurithi.github.io/blob/main/CV.pdf"
-              target="_blank"
-              download="download"
-              >resume</a
-            >
-          </li>
-        </ul>
-      </div>
-      <a class="a-btn" href="#contact">Contact Me</a>
-    </header>
 
-    <aside class="socials">
-      <a href="mailto:felixmurithi.dev@gmail.com" target="_blank">
-        <img
-          src="/images/socials/email-8-svgrepo-com.svg"
-          target="_blank"
-          alt="email icon"
-        />
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">
+        <img src="./images/me.JPG" alt="Felix Murithi" />
+        <span>Felix Murithi</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+
+        <li>
+          <a
+            href="mailto:felixmurithi.dev@gmail.com"
+            class="nav-cta"
+            id="nav-contact-btn"
+          >
+            Contact me →
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- SOCIAL SIDEBAR -->
+    <aside class="socials" aria-label="Social links">
+      <a
+        href="mailto:felixmurithi.dev@gmail.com"
+        target="_blank"
+        aria-label="Email"
+      >
+        <img src="./images/socials/email-8-svgrepo-com.svg" alt="email" />
       </a>
-      <a href="https://github.com/felixmurithi" target="_blank">
-        <img src="/images/socials/icons8-github.svg" alt="github icon" />
+      <a
+        href="https://github.com/felixmurithi"
+        target="_blank"
+        aria-label="GitHub"
+      >
+        <img src="./images/socials/icons8-github.svg" alt="github" />
       </a>
-      <a href="https://www.linkedin.com/in/felix-murithi/" target="_blank">
-        <img src="/images/socials/linkedin.png" alt="linkedin icon" />
+      <a
+        href="https://www.linkedin.com/in/felix-murithi/"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <img src="./images/socials/linkedin.png" alt="linkedin" />
       </a>
     </aside>
 
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-avatar" src="./images/me.JPG" alt="Felix Murithi" />
+      <div class="hero-intro">
+        <span class="hero-badge">Available for work</span>
+        <h1>Hi, I'm <span class="accent">Felix Murithi</span> 👋🏿</h1>
+        <p class="hero-sub">Web Developer &amp; Creative Designer .</p>
+      </div>
+      <div class="tech-stack" aria-label="Technologies I use">
+        <img src="./images/js.svg" alt="JavaScript" title="JavaScript" />
+        <img
+          src="./images/ts-logo-round-128.svg"
+          alt="TypeScript"
+          title="TypeScript"
+        />
+        <img src="./images/React-icon.svg" alt="React" title="React" />
+        <img
+          src="./images/nextjs-icon-light-background.svg"
+          alt="Next.js"
+          title="Next.js"
+        />
+        <img src="./images/nodejs.svg" alt="Node.js" title="Node.js" />
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
     <main>
-      <section class="hero">
-        <div class="profile-summary">
-          <div>
-            <h2>Hi, I Am <span>Felix Murithi 👋🏿</span></h2>
-            <h1>Web Developer & Creative Designer</h1>
-          </div>
-          <p>
-            I design and develop static websites, single page applications,
-            server rendered websites and Rest APIs.
-          </p>
-          <img src="/images/AvatarMaker.svg" alt="my avatar" />
+      <section id="projects">
+        <div class="section-header">
+          <span class="section-eyebrow">Selected work</span>
+          <h2>Projects</h2>
+          <p>A few things I've built.</p>
         </div>
-        <div class="technologies">
-          <img src="./images/js.svg" alt="javascript logo" />
-          <img src="/images/ts-logo-round-128.svg" alt="typescript logo" />
-          <img src="/images/React-icon.svg" alt="react js logo" />
-          <img
-            src="/images/nextjs-icon-light-background.svg"
-            alt="next js logo"
-          />
 
-          <img src="./images/nodejs.svg" alt="node js logo" />
-        </div>
-      </section>
-      <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <div>
-          <figure>
-            <img
-              src="/images/skills/frontend.png"
-              alt="front-end development skill icon"
-            />
-            <div>
-              <h3>Frontend Developement</h3>
-              <p>react, react-query, redux, next</p>
+        <div class="projects-grid">
+          <!-- 1. KEJAS -->
+          <article class="project-card" id="project-kejas">
+            <div class="project-img-wrap">
+              <img
+                src="./images/kejaa.jpg"
+                alt="Kejas — apartment reviews app screenshot"
+              />
             </div>
-          </figure>
+            <div class="project-body">
+              <span class="project-number">01</span>
+              <h3>Kejas</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Mapbox</span>
+              </div>
+              <p class="project-desc">
+                An apartment review platform where users can find vacant rental
+                apartments on an interactive map.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://kejaa.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary"
+                  id="kejas-demo-btn"
+                >
+                  <span>Live demo</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+                <a
+                  href="https://github.com/felixmurithi"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-ghost"
+                  id="kejas-github-btn"
+                >
+                  <span>GitHub</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
 
-          <figure>
-            <img
-              src="/images/skills/backend.png"
-              alt="back-end development skill icon"
-            />
-            <div>
-              <h3>Backend Development</h3>
-              <p>node, express, fastify, github actions, mongodb, postgresql</p>
+          <!-- 2. OUTDOORS KENYA -->
+          <article class="project-card" id="project-outdoors-kenya">
+            <div class="project-img-wrap">
+              <img
+                src="./images/outdoorskenya.jpg"
+                alt="Outdoors Kenya app screenshot"
+              />
             </div>
-          </figure>
-          <figure>
-            <img src="/images/skills/ui_ux.png" alt="web design skill icon" />
-            <div>
-              <h3>Web Design</h3>
-              <p>copy-writing, figma, web-accesibility, SEO</p>
-            </div>
-          </figure>
-        </div>
-      </section>
-      <section class="work" id="projects">
-        <h2>My work</h2>
-        <div>
-          <figure>
-            <img src="/images/1tu1.jpg" alt="" class="" />
-            <div>
-              <h3>1tu1</h3>
-              <a href="https://1tu1.vercel.app/" target="_blank"
-                >live demo <span>&rarr;</span></a
-              >
-            </div>
-          </figure>
-          <figure>
-            <img src="/images/outdoorskenya.jpg" alt="" />
-            <div>
+            <div class="project-body">
+              <span class="project-number">02</span>
               <h3>Outdoors Kenya</h3>
-              <a href="https://outdoors-kenya.vercel.app/" target="_blank"
-                >live demo <span>&rarr;</span></a
-              >
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Mapbox</span>
+              </div>
+              <p class="project-desc">
+                Discover trails, parks and outdoor adventures across Kenya —
+                with detailed route information and an integrated map explorer.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://outdoors-kenya.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary"
+                  id="outdoors-demo-btn"
+                >
+                  <span>Live demo</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+                <a
+                  href="https://github.com/felixmurithi"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-ghost"
+                  id="outdoors-github-btn"
+                >
+                  <span>GitHub</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+              </div>
             </div>
-          </figure>
-          <figure>
-            <img src="/images/react-project.png" alt="" />
-            <div>
-              <h3>React summary</h3>
-              <a href="https://reactin68hrs.vercel.app/" target="_blank"
-                >live demo <span>&rarr;</span></a
-              >
-            </div>
-          </figure>
-          <figure>
-            <img src="/images/nodejs.svg" alt="" />
-            <div>
-              <h3>Node API</h3>
-              <a
-                href="https://github.com/Felixmurithi/node-express-mongo"
-                target="_blank"
-                >live demo<span>&rarr;</span></a
-              >
-            </div>
-          </figure>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <h2>Contact me</h2>
-        <div>
-          <img src="/images/chat-box.png" alt="" />
+          </article>
 
-          <form action="https://formspree.io/f/xanwlboj" method="POST">
-            <input type="text" placeholder="name" name="name" />
-            <input type="email" placeholder="email" name="email" />
-            <textarea name="message" id="" placeholder="message"></textarea>
-            <button type="submit">submit</button>
-          </form>
+          <!-- 3. 1TU1 — GitHub only -->
+          <article class="project-card" id="project-1tu1">
+            <div class="project-img-wrap">
+              <img
+                src="./images/1tu1.jpg"
+                alt="1tu1 tutoring platform screenshot"
+              />
+            </div>
+            <div class="project-body">
+              <span class="project-number">03</span>
+              <h3>1tu1</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Google Maps</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <p class="project-desc">
+                A dating app that caonnects people through scheduled dates.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/1tu1"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary"
+                  id="1tu1-github-btn"
+                >
+                  <span>GitHub</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. REACT SUMMARY -->
+          <article class="project-card" id="project-react-summary">
+            <div class="project-img-wrap">
+              <img
+                src="./images/react-project.png"
+                alt="React summary project screenshot"
+              />
+            </div>
+            <div class="project-body">
+              <span class="project-number">04</span>
+              <h3>React Summary</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">React Router</span>
+              </div>
+              <p class="project-desc">
+                Fundamental React concepts, includes interactive code snippets
+                examples
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://reactin68hrs.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary"
+                  id="react-summary-demo-btn"
+                >
+                  <span>Live demo</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+                <a
+                  href="https://github.com/felixmurithi"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-ghost"
+                  id="react-summary-github-btn"
+                >
+                  <span>GitHub</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
+      <span>© 2026 Felix Murithi</span>
       <ul>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
+        <li><a href="#projects">Projects</a></li>
+
         <li>
-          <a href="/images/skills/Felix Murithi Resume.pdf" target="_blank"
-            >resume</a
-          >
+          <a href="mailto:felixmurithi.dev@gmail.com" target="_blank">Email</a>
         </li>
       </ul>
     </footer>
